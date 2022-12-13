@@ -100,8 +100,6 @@ body{
 /* Main Styles */
 
 .main-index{
-    left:0px;
-    top:72px;
 }
 /*  */
 .main-content{
@@ -134,14 +132,13 @@ body{
 }
 /*  */
 .main-our_skills{
-    padding: 120px;
 }
 .group-our_skills{
     display: flex;
 }
 .list-our_skills{
     list-style-type: none;
-    margin-right: 24px;
+    margin-right: auto;
  }
  /*  */
 .main-what_we_doing{
@@ -163,9 +160,15 @@ body{
 .our_team{
     background-color: var(--Cloud); 
     padding: 120px;
+    justify-content: space-around;
+}
+.group-our_team{
+    display: flex;
+    justify-content: space-around;
 }
 .list-photos{
     list-style-type: none;
+    margin-right: auto;
 }
 /* Portfolio.html */
 .main-portfolio{
@@ -223,6 +226,7 @@ body{
 .footer{
     color:var(--Cornflower);
     background-color:var(--Navy-Blue);
+    padding: 120px;
 }
 .studio-footer{
     color:var(--Cloud);
