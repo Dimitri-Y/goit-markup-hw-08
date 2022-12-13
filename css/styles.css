@@ -12,6 +12,14 @@ body{
     line-height: 1.50;
     font-size: 16px;
 }
+/* container */
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 .visually-hidden{ 
     position: absolute;
      white-space: nowrap;
@@ -30,10 +38,23 @@ body{
 
 .header{
     color:var(--White);
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .webstudio{
     text-decoration: none;
     text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    display: flex;
 }
 .web{
     color:var(--Iris);
@@ -53,32 +74,48 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 }
+.group-navigation{
+    display: flex;
+}
 .navigation{
     color:var(--Navy-Blue);
     font-weight: 600;
     text-decoration:none;
+    margin-right: 24px;
+    display: flex;
+}
+.group-info{
+    display: flex;
 }
 .info{
     color:var(--Slate);
     text-decoration: none;
+    display: flex; 
 }
 .tel{
     color:var(--Slate);
     text-decoration: none;
+    display: flex;
 }
 /* Main Styles */
 
 .main-index{
-
+    left:0px;
+    top:72px;
 }
+/*  */
 .main-content{
     background-color:var(--Navy-Blue);
+    padding: 120px;
 }
 .main-text{
     color:var(--White);
     font-weight: 600;
     font-size: 56px;
     line-height:1.07;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.02em;
 }
 .order_service{
     cursor:pointer;
@@ -89,30 +126,54 @@ body{
     font-style: inherit;  
     line-height: 1.50;
     font-size: 16px;
-}
+    padding: 16px 32px;
+    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
 
+}
 /*  */
 .main-our_skills{
-    
+    padding: 120px;
+}
+.group-our_skills{
+    display: flex;
 }
 .list-our_skills{
     list-style-type: none;
+    margin-right: 24px;
  }
+ /*  */
 .main-what_we_doing{
-
+    padding: 120px;
+}
+.text-what_we_doing{
+    text-align: center;
+    vertical-align: top;
+}
+.group-we_doing{
+    display: flex;
+    justify-content: center;
 }
 .list-we_doing{
-   list-style-type: none;
+    list-style-type: none;
+    margin-right: 24px;
 }
+/*  */
 .our_team{
- background-color: var(--Cloud);
+    background-color: var(--Cloud); 
+    padding: 120px;
 }
 .list-photos{
     list-style-type: none;
 }
+/* Portfolio.html */
 .main-portfolio{
-
+    left:0px;
+    top:72px;
+    padding: 120px;
 }
+/*  */
 .list-block_photo{
     list-style-type: none;
     width:360px; 
@@ -140,8 +201,8 @@ body{
     line-height: 1.50;
     font-size: 16px;
 }
-.section-all{
-
+.section-portfolio{
+    padding: 120px;
 }
 /* Standart Styles */
 .section-text{
