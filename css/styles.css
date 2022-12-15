@@ -15,8 +15,6 @@ body{
 /* container */
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -86,16 +84,28 @@ body{
 }
 .group-info{
     display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
 }
 .info{
     color:var(--Slate);
     text-decoration: none;
-    display: flex; 
 }
 .tel{
     color:var(--Slate);
     text-decoration: none;
+    margin-left: 24px;
+}
+
+/*  */
+.header-portfolio{
+    color:var(--White);
+    left: 0px;
+    top: 0px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* Main Styles */
 
@@ -105,6 +115,7 @@ body{
 .main-content{
     background-color:var(--Navy-Blue);
     padding: 120px;
+    justify-content: center;
 }
 .main-text{
     color:var(--White);
@@ -126,31 +137,38 @@ body{
     font-size: 16px;
     padding: 16px 32px;
     gap: 10px;
-    flex-direction: row;
-    align-items: flex-start;
-
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;   
 }
 /*  */
 .main-our_skills{
+    padding: 120px;
+    padding-top: 0px;
 }
 .group-our_skills{
     display: flex;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;  
 }
 .list-our_skills{
     list-style-type: none;
-    margin-right: auto;
+    margin-right: 24px;
  }
  /*  */
 .main-what_we_doing{
     padding: 120px;
 }
 .text-what_we_doing{
-    text-align: center;
-    vertical-align: top;
 }
 .group-we_doing{
     display: flex;
     justify-content: center;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;  
 }
 .list-we_doing{
     list-style-type: none;
@@ -158,31 +176,40 @@ body{
 }
 /*  */
 .our_team{
-    background-color: var(--Cloud); 
+    background-color: var(--Cloud);
+    margin-left: 0px; 
     padding: 120px;
-    justify-content: space-around;
 }
 .group-our_team{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;  
 }
 .list-photos{
     list-style-type: none;
     margin-right: auto;
+    margin-left: 24px;
 }
 /* Portfolio.html */
 .main-portfolio{
-    left:0px;
-    top:72px;
-    padding: 120px;
 }
 /*  */
-.list-block_photo{
-    list-style-type: none;
-    width:360px; 
+.section-portfolio{
+    padding: 120px;
+}
+.group-button-portfolio{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 8px 16px;
 }
 .list-button{
     list-style-type: none;
+    margin-right: 24px;
 }
 .button-portfolio:hover{
     background-color: var(--Iris);
@@ -193,6 +220,7 @@ body{
     font-family:'Roboto';
     line-height: 1.50;
     font-size: 16px;  
+    border: 1px solid #E7E9FC;
 }
 .button-portfolio{
     background-color: var(--Cloud);
@@ -203,12 +231,24 @@ body{
     font-family:'Roboto';
     line-height: 1.50;
     font-size: 16px;
+    border: 1px solid #E7E9FC;
 }
-.section-portfolio{
-    padding: 120px;
+.group-block-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: calc(100%/3-24px);
+    padding: 0;
+}
+.list-block_photo{
+    list-style-type: none;
+    text-align: center;
+
 }
 /* Standart Styles */
-.section-text{
+.section_text{
+    text-align: center;
+    vertical-align: top;
     font-weight: 600;
     font-size: 36px;
     line-height:1.11;
