@@ -14,16 +14,15 @@ body{
 }
 /* container */
 .container{
-    width: 1158px; 
+    width: 1128px; 
     margin-left: auto;
     margin-right: auto;   
-  }
-.container-header{
-    width: 1158px; 
-    margin-left: auto;
-    margin-right: auto; 
-    display: flex;  
-  }
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container.block{
+    display: flex;
+}
 .visually-hidden{ 
     position: absolute;
      white-space: nowrap;
@@ -46,16 +45,11 @@ img{
 
 .header{
     color:var(--White);
-    display: flex;
-    align-items: center;
-    padding: 0px 156px;
 }
 .webstudio{
     text-decoration: none;
     text-transform: uppercase;
-    align-items: center;
     display: flex;
-    padding: 24px;
 }
 .nav{
     display: flex;
@@ -68,7 +62,8 @@ img{
     line-height:1.33;
     text-decoration: none;
     text-transform: uppercase;
-    display: flex;
+    display:block;
+    padding: 24px 0;
 }
 .studio-header{
     color:var(--Navy-Blue);
@@ -78,49 +73,46 @@ img{
     line-height:1.33;
     text-decoration: none;
     text-transform: uppercase;
-    display: flex;
+    display: block;
+    padding: 24px 0;
 }
 .group-navigation{
     display: flex;
     margin: 0;
     margin-left: 77px;
     padding-left: 0;
-    align-items: center;
 }
 .navigation{
     color:var(--Navy-Blue);
     font-weight: 600;
     text-decoration:none;
-    display: flex;
-    padding: 24px 20px;
+    display: block;
+    margin: 0 20px;
+    padding: 24px 0;
 }
 .group-info{
     display: flex;
     margin: 0;
-    margin-left: 200px;
-    padding-left: 0;
-    align-items: center;
+    margin-left:auto;
 }
 .info{
     color:var(--Slate);
     text-decoration: none;
-    padding: 24px 20px;
-    display: flex;
-    margin: 0;
+    padding: 24px 0px;
+    display: block;
+    margin: 0 20px;
 }
 .tel{
     color:var(--Slate);
     text-decoration: none;
-    display: flex;
-    margin: 0;
+    padding: 24px 0px;
+    display: block;
+    margin: 0 20px;
 }
 
 /* Header portfolio Styles  */
 .header-portfolio{
     color:var(--White);
-    display: flex;
-    align-items: center;
-    padding:0px 156px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);  
 }
 /* Main Styles */
@@ -130,7 +122,7 @@ img{
 /* Main Content */
 .main-content{
     background-color:var(--Navy-Blue);
-    padding: 192px;
+    padding: 192px 0px;
 }
 .main-text{
     color:var(--White);
@@ -138,10 +130,9 @@ img{
     font-size: 56px;
     line-height:1.07;
     text-align: center;
-    vertical-align: top;
-    padding-bottom: 48px;
-    letter-spacing: 0.02em;
+   letter-spacing: 0.02em;
     margin: 0;
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
     width: 492px;
@@ -156,8 +147,7 @@ img{
     line-height: 1.50;
     font-size: 16px;
     padding: 16px 32px;
-    gap: 10px;
-    display: flex;
+    display:block;
     align-items: flex-start;
     flex-direction: row;
     margin-left: auto;
@@ -168,7 +158,7 @@ img{
 }
 /* Our skills */
 .main-our_skills{
-    padding: 120px;
+    padding: 20px;
 }
 .group-our_skills{
     display: flex;
@@ -177,11 +167,13 @@ img{
 }
 .list-our_skills{
     list-style-type: none;
-    padding:0 12px;
- }
+}
+.list-our_skills:not(:last-child){
+   margin-right: 24px;
+}
+
  /* What we doing  */
 .main-what_we_doing{
-    padding: 156px;
     padding-top: 0px;
     padding-bottom: 120px;
 }
@@ -206,7 +198,8 @@ img{
     background-color: var(--Cloud);
     margin:0;
     margin-left: 0px; 
-    padding: 120px;
+    padding-top: 0px;
+    padding-bottom: 120px;
 }
 .group-our_team{
     display: flex;
@@ -224,14 +217,13 @@ img{
     overflow: hidden;
 }
 .card-our_team{
-    padding: 32px;
+    padding:32px 0px;
 }
 /* Portfolio.html */
 .main-portfolio{
 }
 /*  */
 .section-portfolio{
-    padding: 156px;
     padding-top: 96px;
     padding-bottom: 120px;
 }
@@ -244,56 +236,51 @@ img{
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-bottom: 72px;
 }
 .list-button{
     list-style-type: none;
 }
-.button-portfolio:hover{
-    background-color: var(--Iris);
-    color:var(--White);
-    font-weight: 600;
-    cursor:pointer;
-    font-style: inherit;  
-    font-family:'Roboto';
-    line-height: 1.50;
-    font-size: 16px;  
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    padding: 12px 24px;
-    margin: 0 12px;
-    margin-bottom: 72px;
+.list-button:not(:last-child){
+    margin: 0;
+    margin-right: 24px;
 }
 .button-portfolio{
     background-color: var(--Cloud);
     color:var(--Iris);
     font-weight: 600;
     cursor:pointer;
-    font-style: inherit;
-    font-family:'Roboto';
+    font-family:inherit;
     line-height: 1.50;
     font-size: 16px;
     border: 1px solid var(--Cornflower);
     border-radius: 4px;
     padding: 12px 24px;
-    margin: 0 12px;
-    margin-bottom: 72px;
+}
+.button-portfolio:hover{
+    background-color: var(--Iris);
+    color:var(--White);
+    border: 0;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .group-block-photo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-basis: calc(100%/3-24px);
     margin: 0;
-    padding: 0;
+    margin-top: -48px;
+    margin-left: -24px;
+    padding:0;
 }
 .list-block_photo{
     list-style-type: none;
     text-align: flex-start;
-    margin-bottom: 48px;
-    border: 0.5px solid var(--Cornflower);
+    border:0.5px solid var(--Cornflower);
     border-top: 0;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     overflow: hidden;
+    margin-top: 48px;
+    margin-left:24px;
 }
 .card-block-photo{
     padding: 16px 32px;
@@ -301,7 +288,6 @@ img{
 /* Standart Styles */
 .section_text{
     text-align: center;
-    vertical-align: top;
     font-weight: 600;
     font-size: 36px;
     line-height:1.11;
@@ -324,22 +310,11 @@ img{
 .footer{
     color:var(--Cornflower);
     background-color:var(--Navy-Blue);
-    padding: 100px 156px;
+    padding: 100px 0px;
 }
-.webstudio{
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0px;
-}
-.web{
+.web.footer{
     color:var(--Iris);
-    font-weight: 900;
-    font-family:'Raleway';
-    font-size: 18px;
-    line-height:1.33;
-    text-decoration: none;
-    text-transform: uppercase;
-
+    padding: 0px;
 }
 .studio-footer{
     color:var(--Cloud);
@@ -349,6 +324,8 @@ img{
     line-height:1.33;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0px 0;
+    display: block;
 }
 .footer-p_text{
     width: 264px;
