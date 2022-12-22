@@ -125,9 +125,16 @@ img {
 /* Main Content */
 .main-content {
   background-color: var(--Navy-Blue);
-  background-image: url("../images/people-office.jpg");
+  background-color: rgba(46, 47, 66, 0.7);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 192px 0px;
 }
 .main-text {
