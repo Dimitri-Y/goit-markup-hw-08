@@ -93,6 +93,12 @@ img {
   text-decoration: none;
   display: block;
 }
+.navigation:hover {
+  color: var(--Slate);
+}
+.navigation:focus {
+  color: var(--Iris);
+}
 .group-info {
   display: flex;
   margin: 0;
@@ -166,6 +172,14 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.order_service:focus {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.order_service:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 /* Our skills */
 .main-our_skills {
   padding-top: 120px;
@@ -175,6 +189,16 @@ img {
   display: flex;
   padding-left: 0px;
   margin: 0;
+}
+.thumb {
+  background: #f4f4fd;
+  border-radius: 4px;
+  padding: 24px 0;
+  text-align: center;
+}
+.icon-our_skills {
+  width: 64px;
+  height: 64px;
 }
 .list-our_skills {
   list-style-type: none;
