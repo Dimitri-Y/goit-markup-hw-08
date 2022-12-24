@@ -1,10 +1,12 @@
 :root {
   --Slate: #434455;
+  --LightSlate: #8e8f99;
   --Iris: #4d5ae5;
   --Navy-Blue: #2e2f42;
   --White: #ffffff;
   --Cloud: #f4f4fd;
   --Cornflower: #e7e9fc;
+  --Green: #31d0aa;
 }
 body {
   color: var(--Navy-Blue);
@@ -255,7 +257,67 @@ img {
   margin-right: 24px;
 }
 .card-our_team {
-  padding: 32px 0px;
+  padding: 32px 16px;
+}
+.group-messenger {
+  display: flex;
+  text-align: center;
+  padding-left: 0px;
+  margin: 0;
+  margin-top: 8px;
+}
+.list-messenger {
+  list-style-type: none;
+}
+.list-messenger:not(:last-child) {
+  margin-right: 24px;
+}
+.button-messenger {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--Navy-Blue);
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+}
+.button-messenger:hover {
+  background-color: var(--Iris);
+}
+.icon-our_team {
+  width: 16px;
+  height: 16px;
+}
+.customer {
+  padding: 120px;
+}
+.group-customers {
+  display: flex;
+  padding-left: 0px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-customers {
+  list-style-type: none;
+}
+.list-customers:not(:last-child) {
+  margin-right: 24px;
+}
+.block-customers {
+  padding: 16px 32px;
+  border: 1px solid var(--LightSlate);
+  border-radius: 4px;
+  cursor: pointer;
+  fill: var(--LightSlate);
+}
+.block-customers:hover {
+  fill: var(--Iris);
+}
+.icon-customers {
+  width: 104px;
+  height: 56px;
 }
 /* Portfolio.html */
 .main-portfolio {
@@ -343,6 +405,7 @@ img {
   color: var(--Cornflower);
   background-color: var(--Navy-Blue);
   padding: 100px 0px;
+  display: flex;
 }
 .webstudio.footer {
   padding: 0;
@@ -366,4 +429,34 @@ img {
   width: 264px;
   margin: 0px;
   margin-top: 16px;
+}
+.footer-social_media {
+  margin-left: 120px;
+}
+.footer-p_text.social_media {
+  margin-top: 0px;
+  font-weight: 500;
+}
+.group-social_media {
+  margin-top: 16px;
+  padding-left: 0px;
+  display: flex;
+}
+.list-social_media {
+  list-style-type: none;
+}
+.list-social_media:not(:last-child) {
+  margin-right: 24px;
+}
+.button-social_media {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  margin: 0;
+}
+.button-social_media:hover {
+  background-color: var(--Green);
 }
