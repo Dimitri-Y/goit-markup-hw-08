@@ -311,15 +311,12 @@ img {
 .list-customers {
   list-style-type: none;
   flex-basis: calc((100% - 120px) / 6);
-  width: 168px;
-  height: 88px;
 }
 .list-customers:not(:last-child) {
   margin-right: 24px;
 }
 .block-customers {
   display: flex;
-  width: 168px;
   height: 88px;
   border: 1px solid var(--LightSlate);
   border-radius: 4px;
