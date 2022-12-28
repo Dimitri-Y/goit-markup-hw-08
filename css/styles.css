@@ -327,6 +327,7 @@ img {
 }
 .block-customers:hover {
   fill: var(--Iris);
+  border: 1px solid var(--Iris);
 }
 .icon-customers {
   width: 104px;
