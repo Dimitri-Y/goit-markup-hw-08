@@ -597,8 +597,6 @@ img {
   height: 24px;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   background-image: url("/images/close-button.svg");
   background-repeat: no-repeat;
