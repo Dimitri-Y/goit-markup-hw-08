@@ -26,7 +26,7 @@
             ><span class="studio-header">Studio</span></a
           >
           <ul class="group-navigation">
-            <li class="list-navigation">
+            <li class="list-navigation current_page">
               <a class="navigation" href="./index.html">Studio</a>
             </li>
             <li class="list-navigation">
@@ -51,7 +51,9 @@
       <section class="main-content">
         <div class="container">
           <h1 class="main-text">Effective Solutions for Your Business</h1>
-          <button class="order_service" type="button">Order Service</button>
+          <button class="order_service" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="main-our_skills">
@@ -407,5 +409,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
