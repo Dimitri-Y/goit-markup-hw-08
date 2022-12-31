@@ -314,7 +314,7 @@ img {
   height: 40px;
   border: 0;
   border-radius: 50%;
-  background-color: var(--Navy-Blue);
+  background-color: var(--Iris);
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -322,7 +322,7 @@ img {
   transition: background-color 250ms var(--timing-function);
 }
 .tag-messenger:hover {
-  background-color: var(--Iris);
+  background-color: var(--Ocean);
 }
 .icon-our_team {
   width: 16px;
@@ -455,7 +455,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--Iris);
   transform: translateY(0%);
   transition: transform 250ms var(--timing-function);
 }
@@ -595,10 +595,6 @@ img {
   display: flex;
   margin: 0;
   cursor: pointer;
-  background-image: url("/images/close-button.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-
   justify-content: center;
   align-items: center;
   position: absolute;
