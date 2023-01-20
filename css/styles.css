@@ -728,7 +728,6 @@ img {
 }
 
 .modal-form-icons {
-  cursor: pointer;
   fill: var(--Navy-Blue);
   transition: fill 250ms var(--timing-function);
   position: absolute;
