@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,12 +20,21 @@
   </head>
   <body>
     <header class="header">
-      <div class="container block">
+      <div class="container block-header">
+        <a class="webstudio" href="./index.html"
+          ><span class="web">Web</span
+          ><span class="studio-header">Studio</span></a
+        >
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-menu-button">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
         <nav class="nav">
-          <a class="webstudio" href="./index.html"
-            ><span class="web">Web</span
-            ><span class="studio-header">Studio</span></a
-          >
           <ul class="group-navigation">
             <li class="list-navigation current_page">
               <a class="navigation" href="./index.html">Studio</a>
@@ -66,8 +76,8 @@
                   <use href="./images/symbol-defs.svg#antena"></use>
                 </svg>
               </div>
-              <h3 class="h_text">Strategy</h3>
-              <p class="p_text">
+              <h3 class="h_text our_skills">Strategy</h3>
+              <p class="p_text our_skills">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -78,8 +88,8 @@
                   <use href="./images/symbol-defs.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="h_text">Punctuality</h3>
-              <p class="p_text">
+              <h3 class="h_text our_skills">Punctuality</h3>
+              <p class="p_text our_skills">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -90,8 +100,8 @@
                   <use href="./images/symbol-defs.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="h_text">Diligence</h3>
-              <p class="p_text">
+              <h3 class="h_text our_skills">Diligence</h3>
+              <p class="p_text our_skills">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -102,8 +112,8 @@
                   <use href="./images/symbol-defs.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="h_text">Technologies</h3>
-              <p class="p_text">
+              <h3 class="h_text our_skills">Technologies</h3>
+              <p class="p_text our_skills">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -117,6 +127,7 @@
           <ul class="group-we_doing">
             <li class="list-we_doing">
               <img
+                srcset="images/1.jpg 1x,images/1 2x.jpg 2x"
                 src="images/1.jpg"
                 alt="Statistic"
                 width="300"
@@ -125,6 +136,7 @@
             </li>
             <li class="list-we_doing">
               <img
+                srcset="images/2.jpg 1x,images/2 2x.jpg 2x"
                 src="images/2.jpg"
                 alt="tag-messenger"
                 width="300"
@@ -132,25 +144,33 @@
               />
             </li>
             <li class="list-we_doing">
-              <img src="images/3.jpg" alt="articles" width="300" height="250" />
+              <img
+                srcset="images/3.jpg 1x,images/3 2x.jpg 2x"
+                src="images/3.jpg"
+                alt="articles"
+                width="300"
+                height="250"
+              />
             </li>
           </ul>
         </div>
       </section>
-      <section class="our_team">
+      <section class="main-our_team">
         <div class="container">
-          <h2 class="section_text">Our Team</h2>
+          <h2 class="section_text our_team">Our Team</h2>
           <ul class="group-our_team">
             <li class="list-photos">
               <img
+                srcset="images/mark_guerro.jpg 1x,images/mark_guerro 2x.jpg 2x"
                 src="images/mark_guerro.jpg"
                 alt="mark_guerro"
                 width="244"
                 height="240"
+                class="img-our_team"
               />
               <div class="card-our_team">
-                <h3 class="h_text">Mark Guerro</h3>
-                <p class="p_text">Product Designer</p>
+                <h3 class="h_text our_team">Mark Guerro</h3>
+                <p class="p_text our_team">Product Designer</p>
                 <ul class="group-messenger">
                   <li class="list-messenger">
                     <a class="tag-messenger">
@@ -185,14 +205,16 @@
             </li>
             <li class="list-photos">
               <img
+                srcset="images/tom_fold.jpg 1x,images/tom_fold 2x.jpg 2x"
                 src="images/tom_fold.jpg"
                 alt="tom_fold"
                 width="244"
                 height="240"
+                class="img-our_team"
               />
               <div class="card-our_team">
-                <h3 class="h_text">Tom Fold</h3>
-                <p class="p_text">Frontend Developer</p>
+                <h3 class="h_text our_team">Tom Fold</h3>
+                <p class="p_text our_team">Frontend Developer</p>
                 <ul class="group-messenger">
                   <li class="list-messenger">
                     <a class="tag-messenger">
@@ -227,14 +249,16 @@
             </li>
             <li class="list-photos">
               <img
+                srcset="images/camila_garcia.jpg 1x,images/camila_garcia 2x.jpg 2x"
                 src="images/camila_garcia.jpg"
                 alt="camila_garcia"
                 width="244"
                 height="240"
+                class="img-our_team"
               />
               <div class="card-our_team">
-                <h3 class="h_text">Camila Carcia</h3>
-                <p class="p_text">Marketing</p>
+                <h3 class="h_text our_team">Camila Carcia</h3>
+                <p class="p_text our_team">Marketing</p>
                 <ul class="group-messenger">
                   <li class="list-messenger">
                     <a class="tag-messenger">
@@ -269,14 +293,16 @@
             </li>
             <li class="list-photos">
               <img
+                srcset="images/daniel_wilson.jpg 1x,images/daniel_wilson 2x.jpg 2x"
                 src="images/daniel_wilson.jpg"
                 alt="daniel_wilson"
                 width="244"
                 height="240"
+                class="img-our_team"
               />
               <div class="card-our_team">
-                <h3 class="h_text">Daniel Wilson</h3>
-                <p class="p_text">Ui Designer</p>
+                <h3 class="h_text our_team">Daniel Wilson</h3>
+                <p class="p_text our_team">Ui Designer</p>
                 <ul class="group-messenger">
                   <li class="list-messenger">
                     <a class="tag-messenger">
@@ -363,7 +389,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container block">
+      <div class="container block-footer">
         <div class="footer-block">
           <a class="webstudio footer" href="./index.html"
             ><span class="web footer">Web</span
@@ -419,9 +445,11 @@
             />
             <button class="subscribe-button-send" type="submit">
               Subscribe
-              <svg class="subscribe-icon">
-                <use href="./images/icons.svg#icon_send"></use>
-              </svg>
+              <span class="subscribe-icon-block">
+                <svg class="subscribe-icon">
+                  <use href="./images/icons.svg#icon_send"></use>
+                </svg>
+              </span>
             </button>
           </form>
         </div>
@@ -522,6 +550,72 @@
         </form>
       </div>
     </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="icon-modal-button">
+          <use href="./images/symbol-defs.svg#close-button"></use>
+        </svg>
+      </button>
+      <nav class="nav-mobile_menu">
+        <ul class="group-navigation-mobile_menu">
+          <li class="list-navigation mobile_menu current_page">
+            <a class="navigation-mobile_menu" href="./index.html">Studio</a>
+          </li>
+          <li class="list-navigation mobile_menu">
+            <a class="navigation-mobile_menu" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="list-navigation mobile_menu">
+            <a class="navigation-mobile_menu" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="group-info-mobile_menu">
+        <li>
+          <a href="tel:+110001111111" class="tel mobile_menu"
+            >+11(000)111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="info mobile_menu"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="group-messenger mobile_menu">
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
