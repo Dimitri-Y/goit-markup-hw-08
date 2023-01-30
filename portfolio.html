@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -8,16 +9,26 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header-portfolio">
-      <div class="container block">
+      <div class="container block-header">
+        <a class="webstudio" href="./index.html"
+          ><span class="web">Web</span
+          ><span class="studio-header">Studio</span></a
+        >
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-menu-button">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
         <nav class="nav">
-          <a class="webstudio" href="./index.html"
-            ><span class="web">Web</span
-            ><span class="studio-header">Studio</span></a
-          >
           <ul class="group-navigation">
             <li class="list-navigation">
               <a class="navigation" href="./index.html">Studio</a>
@@ -338,5 +349,71 @@
         </div>
       </footer>
     </main>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="icon-modal-button">
+          <use href="./images/symbol-defs.svg#close-button"></use>
+        </svg>
+      </button>
+      <nav class="nav-mobile_menu">
+        <ul class="group-navigation-mobile_menu">
+          <li class="list-navigation mobile_menu">
+            <a class="navigation-mobile_menu" href="./index.html">Studio</a>
+          </li>
+          <li class="list-navigation mobile_menu current_page">
+            <a class="navigation-mobile_menu" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="list-navigation mobile_menu">
+            <a class="navigation-mobile_menu" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="group-info-mobile_menu">
+        <li>
+          <a href="tel:+110001111111" class="tel mobile_menu"
+            >+11(000)111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="info mobile_menu"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="group-messenger mobile_menu">
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-messenger-mobile_menu">
+          <a class="tag-messenger">
+            <svg class="icon-our_team">
+              <use href="./images/symbol-defs.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
