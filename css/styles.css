@@ -172,7 +172,6 @@ img {
 .group-info {
   display: flex;
   margin: 0;
-  margin-left: auto;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -221,9 +220,10 @@ img {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 .icon-menu-button {
+  height: 22px;
 }
 @media screen and (max-width: 767px) {
   .container.block-header {
@@ -252,6 +252,16 @@ img {
   .list-info:not(:last-child) {
     margin-right: 0px;
   }
+  .info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tel {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu-toggle {
@@ -271,6 +281,10 @@ img {
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 .menu-container.is-open {
   transform: translateX(0);
@@ -301,8 +315,13 @@ img {
   background-color: var(--Ocean);
   fill: white;
 }
-.nav {
+.menu-mobile_menu {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
 }
 .list-navigation.mobile_menu:not(:last-child) {
   margin-bottom: 40px;
@@ -389,7 +408,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 192px 0px;
+  padding: 188px 0px;
 }
 @media (min-resolution: 2dppx) {
   .main-content {
@@ -429,6 +448,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/desktop.jpg");
+    background-size: contain;
   }
   @media (min-resolution: 2dppx) {
     .main-content {
@@ -438,6 +458,7 @@ img {
           rgba(46, 47, 66, 0.7)
         ),
         url("../images/desktop\ 2x.jpg");
+      background-size: contain;
     }
   }
 }
@@ -489,7 +510,7 @@ img {
     font-size: 36px;
     line-height: 1.11;
     max-width: 492px;
-    width: 318px;
+    width: 319px;
     /* or 111% */
   }
   .main-content {
@@ -558,6 +579,9 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-our_skills {
+    padding: 96px 0px;
+  }
   .group-our_skills {
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -690,11 +714,14 @@ img {
     margin-bottom: 72px;
   }
   .list-photos {
-    max-width: 244px;
+    max-width: 264px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-our_team {
+    padding: 96px 0px 104px 0px;
+  }
   .main-our_team {
     display: flex;
     flex-direction: column;
@@ -708,8 +735,7 @@ img {
     row-gap: 64px;
   }
   .list-photos {
-    width: calc((100% - 2 * 24px) / 2);
-    flex-basis: 50%;
+    width: calc((100% - 24px) / 2);
     margin: 0;
     max-width: 264px;
   }
@@ -900,6 +926,9 @@ img {
   .list-block_photo {
     margin: 0 auto;
   }
+  .list-button:not(:last-child) {
+    margin: 0;
+  }
   .list-block_photo:not(:last-child) {
     margin-bottom: 48px;
   }
@@ -946,7 +975,7 @@ img {
   color: var(--Cornflower);
   background-color: var(--Navy-Blue);
   padding: 100px 0px;
-  display: flex;
+  /* display: flex; */
 }
 .container.block-footer {
   display: flex;
@@ -973,6 +1002,8 @@ img {
 .footer-p_text {
   margin: 0px;
   margin-top: 16px;
+}
+.footer-p_text.footer-block-text {
   width: 264px;
 }
 .footer-social_media {
@@ -1089,7 +1120,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
@@ -1162,8 +1192,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  min-width: 392px;
-  min-height: 586px;
+  width: 408px;
   position: absolute;
   padding: 72px 24px 24px;
   top: 50%;
@@ -1209,6 +1238,7 @@ img {
   flex-direction: column;
   position: relative;
 }
+
 .modal-form-input {
   padding: 11px 4px;
   padding-left: 38px;
@@ -1233,6 +1263,9 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+}
+.modal-form-textarea:focus-visible {
+  outline: none;
 }
 .modal-form-label {
   font-weight: 400;
