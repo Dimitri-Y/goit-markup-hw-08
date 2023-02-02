@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Studio</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -397,7 +397,7 @@
             ><span class="web footer-webstudio">Web</span
             ><span class="studio-footer">Studio</span>
           </a>
-          <p class="footer-p_text">
+          <p class="footer-p_text footer-block-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
@@ -559,7 +559,7 @@
           <use href="./images/symbol-defs.svg#close-button"></use>
         </svg>
       </button>
-      <nav class="nav-mobile_menu">
+      <div class="menu-mobile_menu">
         <ul class="group-navigation-mobile_menu">
           <li class="list-navigation mobile_menu current_page">
             <a class="navigation-mobile_menu" href="./index.html">Studio</a>
@@ -573,49 +573,51 @@
             <a class="navigation-mobile_menu" href="#">Contacts</a>
           </li>
         </ul>
-      </nav>
-      <ul class="group-info-mobile_menu">
-        <li class="list-info-mobile_menu">
-          <a href="tel:+110001111111" class="tel mobile_menu"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li class="list-info-mobile_menu">
-          <a href="mailto:info@devstudio.com" class="info mobile_menu"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="group-messenger mobile_menu">
-        <li class="list-messenger-mobile_menu">
-          <a class="tag-messenger">
-            <svg class="icon-social_media">
-              <use href="./images/symbol-defs.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="list-messenger-mobile_menu">
-          <a class="tag-messenger">
-            <svg class="icon-social_media">
-              <use href="./images/symbol-defs.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="list-messenger-mobile_menu">
-          <a class="tag-messenger">
-            <svg class="icon-social_media">
-              <use href="./images/symbol-defs.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="list-messenger-mobile_menu">
-          <a class="tag-messenger">
-            <svg class="icon-social_media">
-              <use href="./images/symbol-defs.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        <div class="menu-2">
+          <ul class="group-info-mobile_menu">
+            <li class="list-info-mobile_menu">
+              <a href="tel:+110001111111" class="tel mobile_menu"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="list-info-mobile_menu">
+              <a href="mailto:info@devstudio.com" class="info mobile_menu"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="group-messenger mobile_menu">
+            <li class="list-messenger-mobile_menu">
+              <a class="tag-messenger">
+                <svg class="icon-social_media">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-messenger-mobile_menu">
+              <a class="tag-messenger">
+                <svg class="icon-social_media">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-messenger-mobile_menu">
+              <a class="tag-messenger">
+                <svg class="icon-social_media">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-messenger-mobile_menu">
+              <a class="tag-messenger">
+                <svg class="icon-social_media">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
