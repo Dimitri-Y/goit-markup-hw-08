@@ -448,7 +448,8 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/desktop.jpg");
-    background-size: contain;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   @media (min-resolution: 2dppx) {
     .main-content {
@@ -458,7 +459,6 @@ img {
           rgba(46, 47, 66, 0.7)
         ),
         url("../images/desktop\ 2x.jpg");
-      background-size: contain;
     }
   }
 }
